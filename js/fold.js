@@ -3,15 +3,15 @@ window.onload = function(){
 	var animated = false;
 	
 	function animate(){
-		if(animated==false){
+		if(animated == false){
 			button.className = "animate";
 			animated = true;
 		}
 		else{
-			button.className = "";
 			animated = false;
+			button.className = "";
 		}
 	}
-
+	
 	button.addEventListener("click", animate);
 }
